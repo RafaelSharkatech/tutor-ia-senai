@@ -1,0 +1,13 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-f",
+        "worker/Dockerfile",
+        "-t",
+        "YOUR_ARTIFACT_REGISTRY_IMAGE_URI",
+        ".",
+      ]
+images:
+  - "YOUR_ARTIFACT_REGISTRY_IMAGE_URI"

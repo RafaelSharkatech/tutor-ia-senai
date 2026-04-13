@@ -1,0 +1,43 @@
+{
+  "firebase": {
+    "projectId": "YOUR_FIREBASE_PROJECT_ID",
+    "functionsRegion": "YOUR_FIREBASE_FUNCTIONS_REGION",
+    "useFunctionsEmulator": true
+  },
+  "appCheck": {
+    "reCaptchaV3SiteKey": "YOUR_RECAPTCHA_V3_SITE_KEY"
+  },
+  "livekit": {
+    "host": "wss://YOUR_LIVEKIT_HOST",
+    "apiKey": "YOUR_LIVEKIT_API_KEY",
+    "apiSecret": "YOUR_LIVEKIT_API_SECRET",
+    "defaultRoom": "room-placeholder",
+    "tokenFunctionName": "livekitToken",
+    "tokenTtlSeconds": 600
+  },
+  "worker": {
+    "defaultIdentity": "assistant-bot",
+    "responseTrackName": "assistant",
+    "sttLanguage": "pt-BR",
+    "ttsLanguage": "pt-BR",
+    "ttsVoice": "pt-BR-Neural2-B",
+    "ttsSampleRate": 24000,
+    "geminiModel": "gemini-2.5-flash",
+    "geminiLocation": "us-central1",
+    "googleApplicationCredentials": "/path/to/your/service-account.json",
+    "vad": {
+      "speechThreshold": 1100,
+      "silenceMs": 1000,
+      "minSpeechMs": 1000,
+      "maxSegmentMs": 15000
+    },
+    "systemPrompt": "YOUR_SYSTEM_PROMPT"
+  },
+  "vertexSearch": {
+    "projectId": "YOUR_VERTEX_SEARCH_PROJECT_ID",
+    "location": "global",
+    "appId": "YOUR_VERTEX_SEARCH_APP_ID",
+    "dataStoreId": "YOUR_VERTEX_SEARCH_DATA_STORE_ID",
+    "topK": 5
+  }
+}
