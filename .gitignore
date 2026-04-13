@@ -39,6 +39,12 @@ functions/lib/
 /functions/.runtimeconfig.json
 /docs_arq_api/
 /old_docs/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+infra/terraform/.terraform-build/
+infra/terraform/*.zip
 
 # Symbolication related
 app.*.symbols

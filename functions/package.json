@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "gcp-build": "npm run build",
     "serve": "npm run build && firebase emulators:start --only functions",
     "watch": "tsc --project tsconfig.json --watch",
     "deploy": "npm run build && firebase deploy --only functions",

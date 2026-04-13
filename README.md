@@ -23,6 +23,8 @@ Esta cópia foi reduzida para entrega Web. Arquivos de Android, iOS, macOS, Linu
 - `functions/`: Cloud Functions HTTP para `ping`, `livekitToken` e `ragSearch`.
 - `worker/`: worker que entra na sala LiveKit e executa a pipeline de voz.
 - `config/`: configuração local do projeto.
+- `docs/architecture.md`: desenho da arquitetura da solução.
+- `infra/terraform/`: pacote de IaC para provisionamento da infraestrutura principal.
 
 ## Configuração
 

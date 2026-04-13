@@ -1,3 +1,6 @@
+substitutions:
+  _WORKER_IMAGE_URI: "REPLACE_WITH_WORKER_IMAGE_URI"
+
 steps:
   - name: "gcr.io/cloud-builders/docker"
     args:
@@ -6,8 +9,8 @@ steps:
         "-f",
         "worker/Dockerfile",
         "-t",
-        "YOUR_ARTIFACT_REGISTRY_IMAGE_URI",
+        "${_WORKER_IMAGE_URI}",
         ".",
       ]
 images:
-  - "YOUR_ARTIFACT_REGISTRY_IMAGE_URI"
+  - "${_WORKER_IMAGE_URI}"
