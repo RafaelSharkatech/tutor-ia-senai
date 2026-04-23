@@ -45,6 +45,8 @@ functions/lib/
 *.tfplan
 infra/terraform/.terraform-build/
 infra/terraform/*.zip
+google-services.json
+GoogleService-Info.plist
 
 # Symbolication related
 app.*.symbols

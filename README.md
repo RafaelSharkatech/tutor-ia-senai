@@ -24,6 +24,8 @@ Esta cópia foi reduzida para entrega Web. Arquivos de Android, iOS, macOS, Linu
 - `worker/`: worker que entra na sala LiveKit e executa a pipeline de voz.
 - `config/`: configuração local do projeto.
 - `docs/architecture.md`: desenho da arquitetura da solução.
+- `docs/firebase_android_app_setup.md`: orientação para cadastro do app Android da Unity no Firebase.
+- `docs/google-services.example.json`: exemplo sanitizado da estrutura do arquivo gerado pelo Firebase para Android.
 - `infra/terraform/`: pacote de IaC para provisionamento da infraestrutura principal.
 
 ## Configuração
@@ -47,7 +49,10 @@ Arquivos que foram deixados propositalmente com placeholders:
 - `functions/src/config/project_config.json`
 - `cloudbuild.yaml`
 - `firebase.json`
+- `docs/google-services.example.json`
 
 ## Observação
 
 Este repositório não deve ser publicado com segredos reais, credenciais ativas, chaves de API, tokens, ou arquivos de build gerados.
+
+O arquivo `google-services.json` real nao foi versionado. Para evitar exposicao acidental, o nome do arquivo foi adicionado ao `.gitignore`. O repositório inclui apenas um exemplo sanitizado em `docs/google-services.example.json`.
